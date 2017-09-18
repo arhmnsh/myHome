@@ -1,2 +1,2 @@
 # myHome
-my home on this on virtual planet
+my home on this planet
