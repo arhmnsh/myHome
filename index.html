@@ -11,46 +11,142 @@
     }
     body {
       margin: 0;
+      background: #292B36;
+      font-family: monospace;
     }
     main {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-family: sans-serif;
-      color: #555;
-      background-color: #eee;
+      color: #fff;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 0;
+    }
+
+    a {
+      color: #2196F3;
+    }
+
+    .name {
+      font-size: 3em;
+      font-weight: lighter;
+      margin: 0;
+    }
+
+    .pro {
+      color: #59B75C;
+      font-size: 1.5em;
+      font-weight: lighter;
+      margin-top: 0.2em;
+    }
+
+    .greeting {
+      font-size: 1.3em;
       font-weight: lighter;
     }
-    h1 {
-      font-size: 1em;
-      font-weight: inherit;
-    }
-    p {
-      margin: 0.2em;
+
+    .section {
+      margin-bottom: 1.5em;
       text-align: center;
     }
-    a {
-      color: inherit;
+
+    .cursor {
+      content: '';
+      height: 1em;
+      width: 1px;
+      background: transparent;
+      /*position: absolute;
+      display: block;
+      right: -1vw;
+      top: -20%;*/
       display: inline-block;
-      text-decoration: none;
+      margin-left: 5px;
+      margin-bottom: -3px;
+      animation: blink 1.2s linear infinite;
     }
-    a:hover{
-      transition: 0.2s;
-      transform: scale(1.05);
-      color: #4183c4;
-      text-decoration: underline;
+
+
+
+
+    span.red { color: #ff544a; }
+    span.green { color: #9afc95; }
+    span.violet { color: #c7caeb; }
+    span.lightblue { color: #01b6af; }
+    span.orange { color: #ffd064; }
+    span.blue { color: #0493cd; }
+    span.pink { color: #ed5494; }
+    span.yellow { color: #edfba3; }
+    span.lightgreen { color: #9dc9c8; }
+    span.white { color: #ffffff; }
+
+
+    @-moz-keyframes blink {
+      49% {
+        background: transparent;
+      }
+      50% {
+        background: #fff;
+      }
+      100% {
+        background: #fff;
+      }
+    }
+    @-webkit-keyframes blink {
+      49% {
+        background: transparent;
+      }
+      50% {
+        background: #fff;
+      }
+      100% {
+        background: #fff;
+      }
+    }
+    @-o-keyframes blink {
+      49% {
+        background: transparent;
+      }
+      50% {
+        background: #fff;
+      }
+      100% {
+        background: #fff;
+      }
+    }
+    @keyframes blink {
+      49% {
+        background: transparent;
+      }
+      50% {
+        background: #fff;
+      }
+      100% {
+        background: #fff;
+      }
     }
   </style>
 </head>
 <body>
 <main>
-    <h4>Hi!</h4>
-    <h1>This is Abdul Rahaman</h1>
-    <p>You can find me on</p>
-    <p><a href="//twitter.com/a_rahmanshah">Twitter</a>, <a href="//github.com/arhmnsh">Github</a>, <a href="//dribbble.com/a_rahmanshah">Dribbble</a></p>
-    <br>
-    <p>Or if you prefer pigeons, <a href="mailto:hi@arahaman.engineer?subject=Hello Abdu!">hi@arahaman.engineer</a></p>
+    <h2 class="greeting"><span class="red">H</span><span class="green">e</span><span class="violet">l</span><span class="lightblue">l</span><span class="orange">o</span><span class="blue">!</span><span class="pink"></h4>
+    <h1 class="name">AbdurRahaman Shah <span class="cursor"></span></h1>
+    <h3 class="pro">/*Engineer*/</h3>
+
+    <div class="section">
+      <p>I write code &amp; design stuff</p>
+      <p>iOS, Android, Web, MicroStrategy and some other cool stuff</p>
+    </div>
+    <div class="section">
+      <p>You can find me on</p>
+      <p><a href="//blog.arahaman.engineer/">My blog</a>, <a href="//twitter.com/a_rahmanshah">Twitter</a>, <a href="//github.com/arhmnsh">Github</a>, <a href="//dribbble.com/a_rahmanshah">Dribbble</a></p>
+      <br>
+      <p>Or if you prefer pigeons, <a href="mailto:hi@arahaman.engineer?subject=Hello Abdu!">hi@arahaman.engineer</a></p>
+    </div>
+
 </main>
 </body>
 <script>
